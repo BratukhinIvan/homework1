@@ -1,3 +1,3 @@
 length = int(input("Введите длинну: "))
 width = int(input("Введите ширину: "))
-print(f"S = {length * width}")
+print(length * width)
