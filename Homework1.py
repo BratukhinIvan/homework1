@@ -157,4 +157,33 @@ for i in slova:
 	else:
 		d[i] = 1
 print(d)
+class Sports_equipment:
+
+        def __init__(self,ball,racket,paddle):
+              self.ball = ball
+              self.racket = racket
+              self.paddle = paddle
+
+        def addSports_equipment(self,ball_count,racket_count,paddle_count):
+            self.ball += ball_count
+            self.racket += racket_count
+            self.paddle += paddle_count
+            return f" Кол-во спортивного инвентаря: мячи {self.ball}, ракетки {self.racket}, ракетки для настольного тенниса {self.racket}"
+        
+        def delSports_equipment(self,ball_count,racket_count,paddle_count):
+            self.ball -= ball_count
+            self.racket -= racket_count
+            self.paddle -=paddle_count
+            return f" Кол-во спортивного инвентаря: мячи {self.ball}, ракетки {self.racket}, ракетки для настольного тенниса {self.racket}"
+              
+        
+    
+sport1 = Sports_equipment(11,1,2)
+print(sport1.addSports_equipment(22,23,24))
+print(sport1.addSports_equipment(1,1,1))
+print(sport1.delSports_equipment(10,12,21))
+
+
+
+
 
